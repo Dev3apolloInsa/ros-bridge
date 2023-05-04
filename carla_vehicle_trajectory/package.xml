@@ -3,7 +3,7 @@
 <package format="3">
   <name>carla_vehicle_trajectory</name>
   <version>0.0.0</version>
-  <description>The carla_vehicle_trajectory</description>
+  <description>The carla vehicle trajectory package</description>
   <maintainer email="boubacar@insa-toulouse.fr">boubacar</maintainer>
   <license>MIT</license>
 

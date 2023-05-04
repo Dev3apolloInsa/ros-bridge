@@ -15,12 +15,12 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
-
-import carla
+import os
+import glob
 import sys
 import time
-import os
-import csv
+import carla
+
 sys.path.append('../')
 from agents.navigation.global_route_planner import GlobalRoutePlanner
 
@@ -44,31 +44,32 @@ class Vehicle_trajectory(Node):
         
         
         if self.j % 10 == 0:
-            # Connectez-vous au client et récupérez l'objet World
+        
+            # Connect to the client and retrieve the world object
             client = carla.Client("localhost", 2000)
             client.set_timeout(10)
             world = client.get_world()
    
-            # Demander au serveur le XODR contenant le fichier de carte et le renvoie analysé comme carla.Map.
+            # Ask the server for the XODR containing the map file and returns it parsed as carla.Map.
             carla_map = world.get_map()
         
-            # variable qui détermine la distance entre les points de cheminements
+            # Variable that determines the distance between waypoints
             sampling_resolution = 2.0
 
-            # Initialiser le plan de route
+            # Initialize the route plan
             grp = GlobalRoutePlanner(carla_map, sampling_resolution)
     
-            # Définir le point d'origine et le point d'arriver 
+            # Define the starting point and the ending point
             point_of_origin = carla.Location(x=20.0, y=2.5, z=0.5)
             target_point = carla.Location(x=1.0, y=2.5, z=0.5)
     
-            # Cette méthode renvoie la liste des (carla.Waypoint, RoadOption) de l'origine à la destination
+            # This method returns the list of (carla.Waypoint, RoadOption) from origin to destination
             w1 = grp.trace_route(point_of_origin, target_point)
            
             for w in w1:    
-            #world.debug.draw_string(w[0].transform.location, 'O', draw_shadow=True,
-            #color = carla.Color(r=0, g=0, b=255), life_time=1,
-            #persistent_lines=True)
+                #world.debug.draw_string(w[0].transform.location, 'O', draw_shadow=True,
+                #color = carla.Color(r=0, g=0, b=255), life_time=1,
+                #persistent_lines=True)
         
                 world.debug.draw_point(w[0].transform.location, size =0.07, color = carla.Color(r=255, g=0, b=0),
                 life_time=5, persistent_lines=True)
