@@ -21,13 +21,31 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
 find_package(carla_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-add_executable(tracking_trajectory_cmd src/carla_tracking_cmd.cpp)
-ament_target_dependencies(tracking_trajectory_cmd rclcpp carla_msgs)
+add_executable(publish_waypoints src/waypoints_loader.cpp)
+ament_target_dependencies(publish_waypoints rclcpp carla_msgs nav_msgs geometry_msgs)
+
+add_executable(listener_base_waypoints src/subscrib_to_base_waypoints.cpp)
+ament_target_dependencies(listener_base_waypoints rclcpp carla_msgs nav_msgs geometry_msgs)
+
+add_executable(waypoints_updater src/waypoint_updater.cpp)
+ament_target_dependencies(waypoints_updater rclcpp std_msgs carla_msgs geometry_msgs)
+
+#add_executable(executor_example_3_node src/waypoint_updater.cpp)
+#ament_target_dependencies(executor_example_3_node rclcpp nav_msgs std_msgs carla_msgs geometry_msgs)
+
+
 
 install(TARGETS
-  tracking_trajectory_cmd
+  publish_waypoints
+  listener_base_waypoints
+  waypoints_updater
+#  executor_example_3_node
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

@@ -1,31 +1,18 @@
-// Copyright 2016 Open Source Robotics Foundation, Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+#include <vector>
+#include <string>
 #include <memory>
 #include <iostream>
+#include <algorithm>
+#include "polyfit.hpp"
 #include "rclcpp/rclcpp.hpp"
-#include "image_transport/image_transport.hpp"
+#include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include "sensor_msgs/msg/image.hpp"
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include "sensor_msgs/image_encodings.hpp"
-#include <opencv2/opencv.hpp>
-#include <vector>
-#include <string>
-#include "polyfit.hpp"
-#include <algorithm>
+#include "image_transport/image_transport.hpp"
+
 
 using std::placeholders::_1;
 
@@ -44,7 +31,8 @@ public:
   {
     //Open demo window that will show output image
     cv::namedWindow(OPENCV_WINDOW);
-
+    cv::namedWindow(OPENCV_WINDOW1);
+    
     //Subscribe to camera topic 
     subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
       "/carla/ego_vehicle/rgb_front/image", 10, std::bind(&Image_processing::topic_callback, this, _1));
@@ -53,10 +41,13 @@ public:
   ~Image_processing()
   {
     cv::destroyWindow(OPENCV_WINDOW);
+    cv::destroyWindow(OPENCV_WINDOW1);
   }
   
 private:
   const std::string OPENCV_WINDOW = "CARLA IMAGE processing";
+  const std::string OPENCV_WINDOW1 = "CARLA IMAGE processing test";
+  
   void grayscale(cv::Mat img) {
     /*Applies the Grayscale transform to return an image with only one color channel*/
     cv::cvtColor(img, image_gray, CV_BGR2GRAY);
@@ -90,7 +81,7 @@ private:
     //cv::Mat mask = cv::Mat::zeros(img.rows, img.cols, CV_8UC3);
     cv::Mat mask = cv::Mat::zeros(img.size(), img.type());
     cv::fillPoly(mask, pts, cv::Scalar(255,255,255));
-    cv::bitwise_and(img, mask, image_ROI);  
+    cv::bitwise_and(img, mask, image_ROI); 
     return;
   }
   
@@ -101,39 +92,72 @@ private:
     int dx1 = int(0.0725 * xsize);
     int dx2 = int(0.425 * xsize);
     int dy = int(0.6 * ysize);
-    
     cv::line(img, cv::Point(dx1, ysize), cv::Point(dx2, dy), cv::Scalar(0, 255, 0), 2, cv::LINE_8);
     cv::line(img, cv::Point(dx2, dy), cv::Point(xsize - dx2, dy), cv::Scalar(0, 255, 0), 2, cv::LINE_8);
     cv::line(img, cv::Point(xsize - dx2, dy), cv::Point(xsize - dx1, ysize), cv::Scalar(0, 255, 0), 2, cv::LINE_8);
     cv::line(img, cv::Point(xsize - dx1, ysize), cv::Point(dx1, ysize), cv::Scalar(0, 255, 0), 2, cv::LINE_8);
     return;
-  }  
+  } 
+  
+  void Linear_regression(std::vector<std::vector<double>> lines, std::vector<double> &line_x, std::vector<double> &line_y, double &a, double &b, bool &draw_line) {
+        std::vector<double> coeffs;
+        for (int i = 0; i < lines.size(); i++) {
+            line_x.push_back(lines[i][0]);
+            line_x.push_back(lines[i][2]);
+            line_y.push_back(lines[i][1]);
+            line_y.push_back(lines[i][3]);
+        }
+        if (line_x.size() > 0) {
+            coeffs = polyfit(line_x, line_y, 1);   // y = a*x + b
+            a = coeffs[1];
+            b = coeffs[0];
+            draw_line = true;
+        }else {
+            int m = 1;
+            b = 1;
+            draw_line = false;
+        }
+    }
+    
+    std::vector<std::vector<double>> TriLines(std::vector<std::vector<double>> lines, std::vector<float> interval, float threshold = 0.08){
+        std::vector<std::vector<double>> Lines_tri;
+        float somme = 0;
+        int cmpt = 0;
+        for(auto a : lines){
+            if((a[4] <= interval[1]) && (a[4] >= interval[0])){
+                somme = somme + a[4];
+                cmpt = cmpt + 1;
+            }
+        }
+        float moyenne = somme / cmpt;
+        for(auto element : lines){
+            if((element[4] <= moyenne + threshold) && (element[4] >= moyenne - threshold)){
+                Lines_tri.push_back(element);
+            }
+        }
+        return Lines_tri;
+    }
+    
   
   void draw_lines(cv::Mat img, cv::Mat img_src) {
     /*This function draws `lines` with `color` and `thickness`*/ 
-    int rho = 1;
-    float theta = CV_PI/180;
-    int threshold = 50;
-    int min_line_len = 80;
-    int max_line_gap = 150;
-    
     //The Hough transform algorithm extracts all the lines passing through each of our edge points and group them by similarity. The HoughLinesP function in OpenCV returns an array of lines organized by endpoints (x1, x1, x2, x2).
+    double rho = 0.8;
+    double theta = CV_PI/180;
+    int threshold = 25;
+    int min_line_len = 0;      // 50 
+    int max_line_gap = 250;
     cv::HoughLinesP(img, lines, rho, theta, threshold, min_line_len, max_line_gap);
-    //line_img = cv::Mat::zeros(img.rows, img.cols, CV_8UC3);
     line_img = cv::Mat::zeros(img.size(), img.type());
-    /*for (size_t i=0; i<lines.size(); i++) {
-        cv::Vec4i l = lines[i];
-        cv::line(img_src, cv::Point(l[0], l[1]), cv::Point(l[2], l[3]), cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
-    }*/
     
     //The Hough transformation returns several lines to us, using an equation we organize the lines according to their slope: The positive slopes are for the right lane and the negative slopes are for the left lane (right_lines/left_lines) ===> Sort lines
-    std::vector<std::vector<int>> right_lines;
-    std::vector<std::vector<int>> left_lines;
+    std::vector<std::vector<double>> right_lines;
+    std::vector<std::vector<double>> left_lines;
     for (size_t i=0; i<lines.size(); i++) {
-        int x1 = lines[i][0];
-        int y1 = lines[i][1];
-        int x2 = lines[i][2];
-        int y2 = lines[i][3];
+        double x1 = lines[i][0];
+        double y1 = lines[i][1];
+        double x2 = lines[i][2];
+        double y2 = lines[i][3];
         float a = (y2 - y1) / (x2 - x1);
         if (a >= 0) {
             right_lines.push_back({x1, y1, x2, y2, a});
@@ -142,147 +166,52 @@ private:
             left_lines.push_back({x1, y1, x2, y2, a});
         }
     }
-    /*for (size_t j=0; j<right_lines.size(); j++) {
-        std::vector<int> l = right_lines[j];
-        line(img_src, cv::Point(l[0], l[1]), cv::Point(l[2], l[3]), cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
-    }
-    for (size_t j=0; j<left_lines.size(); j++) {
-        std::vector<int> ll = left_lines[j];
-        line(img_src, cv::Point(ll[0], ll[1]), cv::Point(ll[2], ll[3]), cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
-    }*/
-   
+    
     //Filter out lines with unacceptable slopes that throw off the intended slope of each line ===> Reject outliers
-    std::vector<std::vector<int>> right_lines_tri;
-    std::vector<std::vector<int>> left_lines_tri;
-    std::vector<float> right_interval = {0.45, 1.1};
-    std::vector<float> left_interval = {-1.1, -0.2};
-    float threshold_ = 0.08;
-    float sum = 0;
-    float sum_ = 0;
-    int cmpt = 0;
-    int cmpt_ = 0;
-    for (auto a : right_lines){
-        if (a[4] <= right_interval[1] && a[4] >= right_interval[0]){
-            sum = sum + a[4];
-            cmpt = cmpt + 1;
-        }
-    }
-    float average = sum / cmpt;
-    for (auto element : right_lines){
-        if (element[4] <= average + threshold_ && element[4] >= average - threshold_){
-            right_lines_tri.push_back(element);
-        }
-    }
-    for (auto b : left_lines){
-        if (b[4] <= left_interval[1] && b[4] >= left_interval[0]){
-            sum_ = sum_ + b[4];
-            cmpt_ = cmpt_ + 1;
-        }
-    }
-    float average_ = sum_ / cmpt_;
-    for (auto element : left_lines){
-        if (element[4] <= average_ + threshold_ && element[4] >= average_ - threshold_){
-            left_lines_tri.push_back(element);
-        }
-    }  
-    for (size_t j=0; j<right_lines_tri.size(); j++) {
-        std::vector<int> l = right_lines_tri[j];
-        cv::line(img_src, cv::Point(l[0], l[1]), cv::Point(l[2], l[3]), cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
-    }
-    for (size_t j=0; j<left_lines_tri.size(); j++) {
-        std::vector<int> ll = left_lines_tri[j];
-        cv::line(img_src, cv::Point(ll[0], ll[1]), cv::Point(ll[2], ll[3]), cv::Scalar(0, 0, 255), 2, cv::LINE_AA);
-    }
+    std::vector<std::vector<double>> right_lines_tri = TriLines(right_lines, {0.6, 1.5});
+    std::vector<std::vector<double>> left_lines_tri = TriLines(left_lines, {-1.1, -0.2});
     
     //Finally we merge the left and right sets using linear regression. Which is an attempt to find the best relationship between a group of points. ===> Linear regression
-    /*std::vector<int> right_lines_X; 
-    std::vector<int> right_lines_Y;
-    //std::vector<int> left_lines_X; 
-    //std::vector<int> left_lines_Y;
-    int right_a; 
-    int right_b;
-    //int left_a; 
-    //int left_b;
-    int m;
-    int c;
-    //int k;
-    //int d;
-    bool draw_line_right;
-    //bool draw_line_left;
-    //std::vector<int> coeffs1;
-    std::vector<int> coeffs;
-     
-    for (int k=0; k < right_lines_tri.size(); k++) {
-        right_lines_X.push_back(right_lines_tri[k][0]);
-        right_lines_X.push_back(right_lines_tri[k][2]);
-        right_lines_Y.push_back(right_lines_tri[k][1]);
-        right_lines_Y.push_back(right_lines_tri[k][3]);   
-    }
-    /*for (int j=0; j < left_lines_tri.size(); j++) {
-        left_lines_X.push_back(left_lines_tri[j][0]);
-        left_lines_X.push_back(left_lines_tri[j][2]);
-        left_lines_Y.push_back(left_lines_tri[j][1]);
-        left_lines_Y.push_back(left_lines_tri[j][3]);   
-    }*/
+    std::vector<double> left_lines_X, left_lines_Y, right_lines_X, right_lines_Y, coeffs_left, coeffs_right;
+    double left_coeffs_a, left_coeffs_b, right_coeffs_a, right_coeffs_b; 
+    bool draw_line_left = false, draw_line_right = false;
+    if (!right_lines_tri.empty() && !left_lines_tri.empty()) {
     
-    /*if (right_lines_X.size() > 0) {
-        coeffs = polyfit(right_lines_X, right_lines_Y, 1);  // y = a*x + b
-        right_a = coeffs[0];
-        right_b = coeffs[1];
-        std::cout << right_a << std::endl;
-        std::cout << right_b << std::endl;
-        draw_line_right = true;
-    } else {
-        m = 1;
-        c = 1;
-        draw_line_right = false;
+        Linear_regression(left_lines_tri, left_lines_X, left_lines_Y, left_coeffs_a, left_coeffs_b, draw_line_left);
+        
+        Linear_regression(right_lines_tri, right_lines_X, right_lines_Y, right_coeffs_a, right_coeffs_b, draw_line_right); 
+    
+        auto it = std::minmax_element(right_lines_Y.begin(), right_lines_Y.end());
+        double y2_right = *it.first;   //min_y
+        double y1_right = *it.second;  //max_y
+    
+        auto itt = std::minmax_element(left_lines_Y.begin(), left_lines_Y.end());
+        double y2_left = *itt.first;   //min_y
+        double y1_left = *itt.second;  //max_y
+    
+        double y1;
+        double y2;
+        if (y1_right > y1_left) {
+            y1 = y1_right;
+            y2 = y2_right;
+        } else { 
+            y1 = y1_left;
+            y2 = y2_left;
+        }
+    
+        double left_x1 = (y1 - left_coeffs_b)/left_coeffs_a;
+        double left_x2 = (y2 - left_coeffs_b)/left_coeffs_a;
+        double right_x1 = (y1 - right_coeffs_b)/right_coeffs_a;
+        double right_x2 = (y2 - right_coeffs_b)/right_coeffs_a;   
+    
+        if (draw_line_left == 1)
+            cv::line(img_src, cv::Point(left_x1, y1), cv::Point(left_x2, y2), cv::Scalar(0, 0, 255), 5, cv::LINE_AA);
+    
+        if (draw_line_right == 1)
+            cv::line(img_src, cv::Point(right_x1, y1), cv::Point(right_x2, y2), cv::Scalar(0, 0, 255), 5, cv::LINE_AA);
+    }else{
+        return;
     }  
-    /*if (left_lines_X.size() > 0) {
-        coeffs1 = polyfit(left_lines_X, left_lines_Y, 1);  // y = a*x + b
-        left_a = coeffs1[0];
-        left_b = coeffs1[1];
-        std::cout << left_a << std::endl;
-        std::cout << left_b << std::endl;
-        draw_line_left = true;
-    } else {
-        m = 1;
-        c = 1;
-        draw_line_left = false;
-    }*/
-    
-    /*auto it = std::minmax_element(right_lines_Y.begin(), right_lines_Y.end());
-    int y2_right = *it.first;   //min_y
-    int y1_right = *it.second;  //max_y
-    /*auto itt = std::minmax_element(left_lines_Y.begin(), left_lines_Y.end());
-    int y2_left = *itt.first;   //min_y
-    int y1_left = *itt.second;  //max_y*/ 
-    /*int y1;
-    int y2;
-    
-    y1 = y1_right;
-    y2 = y2_right;
-
-    /*if (y1_right > y1_left) {
-        y1 = y1_right;
-        y2 = y2_right;
-    } else { 
-        y1 = y1_left;
-        y2 = y2_left;
-    }*/
-    /*
-    int right_x1 = (y1 - right_b)/right_a;
-    int right_x2 = (y2 - right_b)/right_a;
-    //int left_x1 = (y1 - left_b)/left_a;
-    //int left_x2 = (y2 - left_b)/left_a;
-    
-    if (draw_line_right == 1) 
-    { 
-        cv::line(img_src, cv::Point(right_x1, y1), cv::Point(right_x2, y2), cv::Scalar(0, 0, 255), 10, cv::LINE_AA);
-    }  
-    /*if (draw_line_left == 1) 
-    { 
-        line(img_src, cv::Point(left_x1, y1), cv::Point(left_x2, y2), cv::Scalar(0, 0, 255), 10, cv::LINE_AA);
-    }*/  
   }
   
   //The callback function that run image procezssing 
@@ -299,7 +228,9 @@ private:
     {
         RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
         return;
-    }  
+    } 
+    
+    cv::Mat img_clone = cv_ptr->image.clone();
     
     /* Call grayscale function ===> image_gray */
     grayscale(cv_ptr->image);
@@ -314,15 +245,18 @@ private:
     region_of_interest(image_canny);
     
     /* Call the fonction that draw the region of interest */
-    //draw_ROI(cv_ptr->image);
+    draw_ROI(img_clone);
     
-    /* Call the fonction that draw the dectected lanes */
+    /* Call the fonction that draw the dectected lanes ===> cv_ptr->image*/
     draw_lines(image_ROI, cv_ptr->image);
     
-    /*cv::Mat dst;
-    dst = image_canny.clone();
-    cv::addWeighted(cv_ptr->image, 0.7, line_img, 0.3, 0., dst);*/
-
+    //cv::Mat dst;
+    //dst = image_canny.clone();
+    //cv::addWeighted(cv_ptr->image, 0.8, img_clone, 0.1, 0.0, dst);
+    
+    cv::imshow(OPENCV_WINDOW1, img_clone);
+    cv::waitKey(3);
+    
     /*Show Carla vehicle camera image*/
     cv::imshow(OPENCV_WINDOW, cv_ptr->image);
     cv::waitKey(3);
@@ -338,7 +272,3 @@ int main(int argc, char * argv[])
   rclcpp::shutdown();
   return 0;
 }  
-  
-  
-  
-  

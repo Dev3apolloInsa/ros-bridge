@@ -1,0 +1,3010 @@
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1213.28
+          y: 1188.11
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.021525926383
+          w: 0.999768290402
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1214.16
+          y: 1188.15
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0203545438314
+          w: 0.999792824812
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1215.49
+          y: 1188.2
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0198716216754
+          w: 0.999802539831
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1216.81
+          y: 1188.25
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0181625555392
+          w: 0.999835047183
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1217.25
+          y: 1188.27
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0175501299078
+          w: 0.99984598461
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1219.02
+          y: 1188.33
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0153055908279
+          w: 0.999882862584
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1220.34
+          y: 1188.36
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0130744125058
+          w: 0.999914526216
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1220.78
+          y: 1188.37
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0124537367327
+          w: 0.999922449214
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1222.55
+          y: 1188.41
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0101713416905
+          w: 0.999948270566
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1223.43
+          y: 1188.43
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00906337071579
+          w: 0.999958926812
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1224.32
+          y: 1188.44
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00797535454547
+          w: 0.999968196354
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1225.64
+          y: 1188.46
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00621338451517
+          w: 0.99998069674
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1226.97
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00455652403783
+          w: 0.99998961899
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1227.41
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00449746270104
+          w: 0.999989886363
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1229.18
+          y: 1188.49
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00345957601538
+          w: 0.999994015649
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1230.5
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00173205515697
+          w: 0.999998499991
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1230.94
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00117378601246
+          w: 0.999999311113
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1232.71
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+          w: 1.0
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1233.6
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00117809681728
+          w: -0.999999306044
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1234.48
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00110828386291
+          w: -0.999999385853
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1235.8
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00283615628754
+          w: -0.999995978101
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1237.13
+          y: 1188.49
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00449420746073
+          w: -0.999989900999
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1237.57
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00451166078378
+          w: -0.999989822407
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1239.34
+          y: 1188.46
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00566356331199
+          w: -0.999983961897
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1240.22
+          y: 1188.45
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00621333211097
+          w: -0.999980697066
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1241.11
+          y: 1188.44
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00678055213174
+          w: -0.999977011792
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1242.43
+          y: 1188.42
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00676309953192
+          w: -0.999977129981
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1243.76
+          y: 1188.4
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00795861757146
+          w: -0.999968329702
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1244.2
+          y: 1188.4
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00789753299128
+          w: -0.999968814
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1245.08
+          y: 1188.38
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00849092455982
+          w: -0.99996395145
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1246.85
+          y: 1188.35
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107684734602
+          w: -0.999942018309
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1248.18
+          y: 1188.32
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107248424799
+          w: -0.999942487223
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1248.62
+          y: 1188.31
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107248424799
+          w: -0.999942487223
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1250.38
+          y: 1188.27
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0113443967472
+          w: -0.999935650261
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1251.27
+          y: 1188.25
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0113007665442
+          w: -0.999936144299
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1252.15
+          y: 1188.23
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0118766863597
+          w: -0.999929469673
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1253.48
+          y: 1188.2
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0118766863597
+          w: -0.999929469673
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1254.8
+          y: 1188.17
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0124526022354
+          w: -0.999922463343
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+---
+header: 
+  seq: 14596
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+waypoints: 
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1199.58
+          y: 1187.46
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0237858961172
+          w: 0.99971707555
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1200.46
+          y: 1187.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0237301485871
+          w: 0.999718400375
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1202.23
+          y: 1187.59
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.023799069622
+          w: 0.999716762031
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1203.11
+          y: 1187.63
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0237301485871
+          w: 0.999718400375
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1204.0
+          y: 1187.67
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0237301485871
+          w: 0.999718400375
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1205.32
+          y: 1187.73
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.023782493685
+          w: 0.999717156497
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1206.65
+          y: 1187.8
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0248353141005
+          w: 0.999691556018
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1207.09
+          y: 1187.82
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0249007437097
+          w: 0.999689928409
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1208.86
+          y: 1187.91
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.024364915739
+          w: 0.999703131375
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1210.18
+          y: 1187.97
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0237301485871
+          w: 0.999718400375
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1210.63
+          y: 1187.99
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0231102904452
+          w: 0.999732921572
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1212.39
+          y: 1188.07
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.021507430176
+          w: 0.999768688471
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1213.28
+          y: 1188.11
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.021525926383
+          w: 0.999768290402
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1214.16
+          y: 1188.15
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0203545438314
+          w: 0.999792824812
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1215.49
+          y: 1188.2
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0198716216754
+          w: 0.999802539831
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1216.81
+          y: 1188.25
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0181625555392
+          w: 0.999835047183
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1217.25
+          y: 1188.27
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0175501299078
+          w: 0.99984598461
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1219.02
+          y: 1188.33
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0153055908279
+          w: 0.999882862584
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1220.34
+          y: 1188.36
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0130744125058
+          w: 0.999914526216
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1220.78
+          y: 1188.37
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0124537367327
+          w: 0.999922449214
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1222.55
+          y: 1188.41
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0101713416905
+          w: 0.999948270566
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1223.43
+          y: 1188.43
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00906337071579
+          w: 0.999958926812
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1224.32
+          y: 1188.44
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00797535454547
+          w: 0.999968196354
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1225.64
+          y: 1188.46
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00621338451517
+          w: 0.99998069674
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1226.97
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00455652403783
+          w: 0.99998961899
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1227.41
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00449746270104
+          w: 0.999989886363
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1229.18
+          y: 1188.49
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00345957601538
+          w: 0.999994015649
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1230.5
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00173205515697
+          w: 0.999998499991
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1230.94
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.00117378601246
+          w: 0.999999311113
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1232.71
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+          w: 1.0
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1233.6
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00117809681728
+          w: -0.999999306044
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1234.48
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00110828386291
+          w: -0.999999385853
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1235.8
+          y: 1188.5
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00283615628754
+          w: -0.999995978101
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1237.13
+          y: 1188.49
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00449420746073
+          w: -0.999989900999
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1237.57
+          y: 1188.48
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00451166078378
+          w: -0.999989822407
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1239.34
+          y: 1188.46
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00566356331199
+          w: -0.999983961897
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1240.22
+          y: 1188.45
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00621333211097
+          w: -0.999980697066
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1241.11
+          y: 1188.44
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00678055213174
+          w: -0.999977011792
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1242.43
+          y: 1188.42
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00676309953192
+          w: -0.999977129981
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1243.76
+          y: 1188.4
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00795861757146
+          w: -0.999968329702
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1244.2
+          y: 1188.4
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00789753299128
+          w: -0.999968814
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1245.08
+          y: 1188.38
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.00849092455982
+          w: -0.99996395145
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1246.85
+          y: 1188.35
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107684734602
+          w: -0.999942018309
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1248.18
+          y: 1188.32
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107248424799
+          w: -0.999942487223
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1248.62
+          y: 1188.31
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0107248424799
+          w: -0.999942487223
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1250.38
+          y: 1188.27
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0113443967472
+          w: -0.999935650261
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1251.27
+          y: 1188.25
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0113007665442
+          w: -0.999936144299
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1252.15
+          y: 1188.23
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0118766863597
+          w: -0.999929469673
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1253.48
+          y: 1188.2
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0118766863597
+          w: -0.999929469673
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+  - 
+    pose: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      pose: 
+        position: 
+          x: 1254.8
+          y: 1188.17
+          z: 0.0
+        orientation: 
+          x: -0.0
+          y: 0.0
+          z: 0.0124526022354
+          w: -0.999922463343
+    twist: 
+      header: 
+        seq: 0
+        stamp: 
+          secs: 0
+          nsecs:         0
+        frame_id: ''
+      twist: 
+        linear: 
+          x: 11.1111111111
+          y: 0.0
+          z: 0.0
+        angular: 
+          x: 0.0
+          y: 0.0
+          z: 0.0
+---

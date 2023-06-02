@@ -41,8 +41,8 @@ def generate_launch_description():
         ),
         launch.actions.DeclareLaunchArgument(
             name='town',
-            default_value='Town05',
-            description='Either use an available CARLA town (eg. "Town05") or an OpenDRIVE file (ending in .xodr)'
+            default_value='Town10HD',
+            description='Either use an available CARLA town (eg. "Town10HD") or an OpenDRIVE file (ending in .xodr)'
         ),
         launch.actions.DeclareLaunchArgument(
             name='register_all_sensors',
