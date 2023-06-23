@@ -16,7 +16,7 @@
 
 using std::placeholders::_1;
 
-//Global varible declaration
+//Global variable declaration
 cv::Mat image_gray;
 cv::Mat image_blurred;
 cv::Mat image_canny;
@@ -31,7 +31,6 @@ public:
   {
     //Open demo window that will show output image
     cv::namedWindow(OPENCV_WINDOW);
-    cv::namedWindow(OPENCV_WINDOW1);
     
     //Subscribe to camera topic 
     subscription_ = this->create_subscription<sensor_msgs::msg::Image>(
@@ -41,12 +40,10 @@ public:
   ~Image_processing()
   {
     cv::destroyWindow(OPENCV_WINDOW);
-    cv::destroyWindow(OPENCV_WINDOW1);
   }
   
 private:
   const std::string OPENCV_WINDOW = "CARLA IMAGE processing";
-  const std::string OPENCV_WINDOW1 = "CARLA IMAGE processing test";
   
   void grayscale(cv::Mat img) {
     /*Applies the Grayscale transform to return an image with only one color channel*/
@@ -249,13 +246,6 @@ private:
     
     /* Call the fonction that draw the dectected lanes ===> cv_ptr->image*/
     draw_lines(image_ROI, cv_ptr->image);
-    
-    //cv::Mat dst;
-    //dst = image_canny.clone();
-    //cv::addWeighted(cv_ptr->image, 0.8, img_clone, 0.1, 0.0, dst);
-    
-    cv::imshow(OPENCV_WINDOW1, img_clone);
-    cv::waitKey(3);
     
     /*Show Carla vehicle camera image*/
     cv::imshow(OPENCV_WINDOW, cv_ptr->image);
