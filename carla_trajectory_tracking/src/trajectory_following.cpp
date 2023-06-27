@@ -22,7 +22,7 @@ using std::placeholders::_1;
 std::vector<double> veh_pos(3);
 double roll, pitch, yaw;
 double veh_velocity;
-double L = 3; //2.875;
+double L = 3.00677;
 double Kdd = 4.0;
 double alpha_prev = 0;
 double delta_prev = 0;
@@ -47,21 +47,16 @@ class TrajectoryTracking : public rclcpp::Node
   private: 
     void Vehicule_status_callback(const carla_msgs::msg::CarlaEgoVehicleStatus::SharedPtr msgs) const {
       veh_velocity = msgs->velocity;
-      //std::cout<< veh_velocity << std::endl;
+
       tf2::Quaternion q(msgs->orientation.x, msgs->orientation.y, msgs->orientation.z, msgs->orientation.w);   
       tf2::Matrix3x3 m(q);
       m.getRPY(roll, pitch, yaw);
-      //std::cout<< yaw << std::endl;
     } 
 
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) const {
       veh_pos[0] = msg->pose.pose.position.x;
       veh_pos[1] = msg->pose.pose.position.y;
       veh_pos[2] = msg->pose.pose.position.z;
-      /*for (int i(0); i<veh_pos.size(); ++i)
-      {
-        std::cout<< veh_pos[i] << std::endl;
-      }*/
     }
     
     void get_waypoints_list() {
@@ -116,7 +111,6 @@ class TrajectoryTracking : public rclcpp::Node
       KDTree tree(waypoint_tree);
       int closest_idx = tree.nearest_index({veh_pos[0], (-1)*veh_pos[1]});
       double *closest_coord = get_vector(waypoint_tree, closest_idx);
-      double ld = Kdd * veh_velocity;
       
       double alpha = atan2(closest_coord[1]+veh_pos[1], closest_coord[0]-veh_pos[0]) + yaw;
       if (std::isnan(alpha)) {
@@ -125,17 +119,24 @@ class TrajectoryTracking : public rclcpp::Node
         alpha_prev = alpha;
       }
       
+      double ld = Kdd * veh_velocity;
       double steer_angle = get_steering_angle(alpha, ld);
 
-      std::cout << "Position veh : " << veh_pos[0] << " " << veh_pos[1] <<std::endl;
-      std::cout << "Index : "<< closest_idx <<std::endl;
-      std::cout << "Waypoints : " <<closest_coord[0] << " " << closest_coord[1] <<std::endl;
-      std::cout << "Alpha : " << alpha <<std::endl;
-      std::cout << "Delta : " << steer_angle <<std::endl;
+      std::cout << "Vehicle current_position : " << veh_pos[0] << " " << veh_pos[1] <<std::endl;
+      std::cout << "Target waypoint index : "<< closest_idx <<std::endl;
+      std::cout << "Target Waypoint coord : " <<closest_coord[0] << " " << closest_coord[1] <<std::endl;
+      std::cout << "Heading angle : " << alpha <<std::endl;
+      std::cout << "Steering angle : " << steer_angle <<std::endl;
+      std::cout << "------------------------------------------------------------------"<<std::endl;
       
       message.steer = steer_angle;  
-      message.brake = 0; 
-      message.throttle = 0.2;
+      message.brake = 0;
+      if ((closest_idx + 1) == waypoint_tree.size()) {
+        message.throttle = 0.0;
+      } else {
+        message.throttle = 0.2;
+      }
+      
       publisher_->publish(message); 
     }
     rclcpp::TimerBase::SharedPtr timer_;
